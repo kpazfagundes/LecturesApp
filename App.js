@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 import * as Animatable from 'react-native-animatable';
 import LectureCard from './src/components/lecture-card';
-import lecturesData from './data.json';
+// import lecturesData from './data.json';
 
 
 const SELECTORS = [
@@ -36,8 +36,7 @@ export default class App extends Component {
       <Animatable.View
       duration={400}
       style={[styles.header, isActive ? styles.active : styles.inactive]}
-      transition="backgroundColor"
-      >
+      transition="backgroundColor">
       <Text style={styles.headerText}>{section.title}</Text>
       </Animatable.View>
       );
@@ -55,6 +54,19 @@ export default class App extends Component {
         </Animatable.Text>
         </Animatable.View>
         );
+      }
+
+      createGrid = (data) => {
+        let grid = []
+        for (let i = 0; i < data.length; i++) {
+          grid.push(<LectureCard lectureName={data.lectureName}
+            lectureDescription={data.lectureDescription}
+            author={data.author}
+            authorDescription={data.authorDescription}
+            // image={require(data.image)}
+            />)
+        }
+        return grid
       }
       
       render() {
@@ -84,17 +96,20 @@ export default class App extends Component {
             </TouchableOpacity>
             ))}
             </View>
-            const lectureData = LecturesData;
+
+            {/* {this.createGrid(lecturesData)} */}
+
+            {/* const lectureData = LecturesData; */}
            
                           
-           for (var index in lectureData){
+           {/* {for (let i = 0; i < lectureData.length; i++) {
               <LectureCard lectureName={this.props.lectureData.lectureName}
               lectureDescription={this.props.lectureData.lectureDescription}
               author={this.props.lectureData.author}
               authorDescription={this.props.lectureData.authorDescription}
               image={this.props.lectureData.image}/>
-           }
-            <LectureCard lectureName=""
+           }} */}
+            {/* <LectureCard lectureName=""
                           lectureDescription="a"
                           author="a"
                           authorDescription="a"
@@ -103,7 +118,7 @@ export default class App extends Component {
                           lectureDescription="b"
                           author="ba"
                           authorDescription="ba"
-                          image={require('./images/luiz.jpg')} />
+                          image={require('./images/luiz.jpg')} /> */}
             </View>
 
             );
