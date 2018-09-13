@@ -1,6 +1,6 @@
 {
-  "name": "LecturesApp",
-  "author" "Karine Paz Fagundes Cordeiro",
+  "name": "lecturesapp",
+  "author": "Karine Paz Fagundes Cordeiro",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
