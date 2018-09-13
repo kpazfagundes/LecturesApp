@@ -81,14 +81,17 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '300',
     marginBottom: 20,
+    color: '#ffffff'
   },
   bold: {
     fontSize: 16,
     fontWeight: '300',
     marginBottom: 10,
+    color: '#ffffff'
   },
   paragraph: {
     marginBottom: 20,
+    color: '#ffffff'
   },
   header: {
     backgroundColor: '#F5FCFF',
@@ -98,16 +101,19 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 16,
     fontWeight: '500',
+    backgroundColor: '#5d1049',
+    color: '#ffffff'
   },
   content: {
     padding: 20,
-    backgroundColor: '#fff',
+    backgroundColor: '#5d1049',
+    color: '#ffffff'
   },
   active: {
-    backgroundColor: 'rgba(0,255,255,1)',
+    backgroundColor: '#720d5d',
   },
   inactive: {
-    backgroundColor: 'rgba(245,252,255,1)',
+    backgroundColor: '#5d1049',
   },
   image: {
     height: 300,

@@ -23,7 +23,8 @@ const styles = StyleSheet.create({
     marginTop: 24,
     marginBottom: 40,
     justifyContent: 'center',
-    backgroundColor: 'rgba(0,255,255,1)',
+    backgroundColor: '#F5FCFF',
+
   },
   title: {
     textAlign: 'center',
@@ -31,5 +32,6 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     marginTop: 20,
     marginBottom: 20,
+    color: '#5d1049',
   },
 });
