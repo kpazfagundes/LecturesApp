@@ -20,13 +20,14 @@ export default class LectureCards extends Component {
     this.setState({ activeSection: section });
   };
 
+
   renderHeader = (section, _, isActive) => {
     return (
       <Animatable.View
         duration={400}
         style={[styles.header, isActive ? styles.active : styles.inactive]}
         transition="backgroundColor" >
-        <Text style={styles.headerText}>{section.lectureName}</Text>
+        <Text style={styles.headerText}>{section.eventName}</Text>
       </Animatable.View>
     );
   };
@@ -38,62 +39,27 @@ export default class LectureCards extends Component {
         style={[styles.content, isActive ? styles.active : styles.inactive]}
         transition="backgroundColor">
         <Animatable.Image style={styles.image}
-          source={{ uri: section.image }}
-        />
-        <Animatable.Text style={styles.subtitle} animation={isActive ? 'bounceIn' : undefined}>
-          {section.author}
-        </Animatable.Text>
-        <Animatable.Text style={styles.paragraph} animation={isActive ? 'bounceIn' : undefined}>
-          {section.lectureDescription}
-        </Animatable.Text>
-        <Animatable.Text style={styles.bold} animation={isActive ? 'bounceIn' : undefined}>
-          Sobre {section.author}
-        </Animatable.Text>
-        <Animatable.Text style={styles.paragraph} animation={isActive ? 'bounceIn' : undefined}>
-          {section.authorDescription}
-        </Animatable.Text>
-      </Animatable.View>
-    );
-  };
-
-  renderHeader1 = (section, _, isActive) => {
-    return (
-      <Animatable.View
-        duration={400}
-        style={[styles.header, isActive ? styles.active : styles.inactive]}
-        transition="backgroundColor" >
-        <Text style={styles.headerText}>{section.eventName}</Text>
-      </Animatable.View>
-    );
-  };
-
-  renderContent1(section, _, isActive) {
-    return (
-      <Animatable.View
-        duration={400}
-        style={[styles.content, isActive ? styles.active : styles.inactive]}
-        transition="backgroundColor">
-        <Animatable.Image style={styles.image}
           source={{ uri: section.eventImage }}
         />
-        <Animatable.Text style={styles.subtitle} animation={isActive ? 'bounceIn' : undefined}>
+        <Animatable.Text style={styles.paragraph}
+        color='#ffffff' animation={isActive ? 'bounceIn' : undefined}>
           {section.eventDescription}
         </Animatable.Text>
       </Animatable.View>
     );
   };
-
   render() {
     return (
       <Accordion
         activeSection={this.state.activeSection}
-        sections={lecturesData}
+        sections={eventdata}
         touchableComponent={TouchableOpacity}
         renderHeader={this.renderHeader}
         renderContent={this.renderContent}
         duration={400}
         onChange={this.setSection}
       />
+
     )
   }
 }
@@ -109,17 +75,17 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '300',
     marginBottom: 20,
-    color: '#ffffff'
+
   },
   bold: {
     fontSize: 16,
     fontWeight: '300',
     marginBottom: 10,
-    color: '#ffffff'
+
   },
   paragraph: {
     marginBottom: 20,
-    color: '#ffffff'
+
   },
   header: {
     backgroundColor: '#F5FCFF',
@@ -135,7 +101,7 @@ const styles = StyleSheet.create({
   content: {
     padding: 20,
     backgroundColor: '#5d1049',
-    color: '#ffffff'
+
   },
   active: {
     backgroundColor: '#720d5d',

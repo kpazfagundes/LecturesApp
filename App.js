@@ -2,15 +2,17 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native';
 
 import LectureCards from './src/components/lecture-cards';
+import EventCards from './src/components/event-cards';
 
 export default class App extends Component {
   render() {
 
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Developers Day</Text>
+        <Text style={styles.title} >Developers Day</Text>
 
         <ScrollView>
+          <EventCards />
           <LectureCards />
         </ScrollView>
       </View>
@@ -33,5 +35,6 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginBottom: 20,
     color: '#5d1049',
+    
   },
 });

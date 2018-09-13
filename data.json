@@ -26,5 +26,19 @@
         "author": "Flavia Dias Ladeira",
         "authorDescription":"Formada em Ciências Biológicas, tem Mestrado e Doutorado em Genética e Evolução, todos pela UFMG. Possui 9 anos de experiência com Consultoria e em Gestão de Projetos de tecnologia. Gerente de Projetos na ThoughtWorks à 3 anos tem como abordagem o aprendizado inquisitivo permitindo o trabalho em equipe de forma colaborativa para resolução de questões em sistemas complexos.",
         "image": "https://www.agileminas.com.br/2018/images/palestrantes/view-Flavia.jpg"
+    },
+    {
+        "lectureName": "Onboarding - Dicas e aprendizados para começar com o pé direito em um novo time",
+        "lectureDescription":"Começar em uma nova empresa, mudar de área, ou mesmo de cliente, provavelmente fará com que você mude também de time e isso nem sempre é fácil, principalmente para um agilista. A ideia aqui é compartilhar algumas dicas, práticas e experiências que podem te ajudar a entender melhor esse contexto, diminuir o peso da mudança e chegar e acelerar a integração com as pessoas.",
+        "author": "Thiago Soares dos Santos Sousa",
+        "authorDescription":"Thiago trabalha com agilidade em desenvolvimento de software desde 2013, atualmente está como head de agilidade organizacional na Easynvest. Experiente em facilitação e formação de times, ainda é um jovem padawan quando o assunto é envolvimento com a comunidade, entretanto, tem buscado expandir e aprimorar sua contribuição.",
+        "image": "https://www.agileminas.com.br/2018/images/palestrantes/view-Thiago.jpg"
+    },
+    {
+        "lectureName": "Os desafios de desenvolver uma cultura ágil: eficiência, eficácia e economia",
+        "lectureDescription":"Nesta sessão compartilharei com a audiência ferramentas aplicadas em equipes que atuam em contextos ágeis e que foram úteis para a criação de ambientes eficientes (fazer a coisa da forma certa), eficazes (fazer o que é importante para o negócio) e econômicos (fazer de uma maneira barata).",
+        "author": "Raphael Donaire Albino",
+        "authorDescription":"Atuo com desenvolvimento de software desde 2006 e atualmente trabalho como Agile Consultant na Plataformatec, ajudando a construir a agilidade no coração das pessoas. Sou doutorando e mestre em Administração de Empresas pela FEA-USP, graduado em Sistemas de Informação pela Universidade Estadual Paulista Júlio de Mesquita Filho – UNESP, campus Bauru, e especialista em caráter de MBA em Gestão de Projetos pela Fundação Getúlio Vargas – FGV. Em 2017 lancei junto com a editora Casa do Código o livro : Métricas Ágeis Obtenha melhores resultados em sua equipe. https://www.casadocodigo.com.br/products/livro-metricas-agei",
+        "image": "https://www.agileminas.com.br/2018/images/palestrantes/view-Raphael.jpgs"
     }
 ]
