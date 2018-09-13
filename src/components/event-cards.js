@@ -90,6 +90,7 @@ const styles = StyleSheet.create({
   header: {
     backgroundColor: '#F5FCFF',
     padding: 10,
+    marginBottom: 2,
   },
   headerText: {
     textAlign: 'center',
