@@ -135,7 +135,6 @@ const styles = StyleSheet.create({
   content: {
     padding: 20,
     backgroundColor: '#5d1049',
-    color: '#ffffff'
   },
   active: {
     backgroundColor: '#720d5d',
